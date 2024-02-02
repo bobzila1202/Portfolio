@@ -1,0 +1,35 @@
+.about .container {
+    /* width: 1240px; */
+    margin: auto;
+    display: table;
+    
+    /* margin-left: 180px; */
+}
+
+.about {
+    margin: auto;
+    padding: 8rem 0rem 0px 0rem;
+    width: 100%;
+}
+.about h1 { color: white;}
+.aboutMe {
+    color: white;
+    width: 70%;
+    border: solid 1px;
+    padding: 1%;
+    float: left;
+}
+
+#myPic {
+    float: right;
+    display: flex;
+    height: 400px;
+    margin: 10px;
+}
+
+
+@media (max-width: 426px) {
+    .aboutMe {
+        font-size: 20px;
+    }
+}

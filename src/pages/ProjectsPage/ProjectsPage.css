@@ -1,0 +1,13 @@
+.projects .container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.projects {
+
+    margin: auto;
+    padding: 8rem 0rem 0 0rem;
+    width: 100%;
+}

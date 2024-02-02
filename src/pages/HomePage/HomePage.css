@@ -1,0 +1,49 @@
+.home .container {
+    display: grid;
+    width: auto;
+    margin: auto;
+    grid-template-rows: 60px 120px 190px;
+    grid-template-columns: 190px 450px 500px;
+    position: relative;
+    /* margin-left: 180px; */
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.home {
+    margin: auto;
+    padding: 8rem 0rem 0px 0rem;
+    max-width: auto;
+}
+
+h1 {  
+    grid-column: span 2;
+}
+
+p{
+    font-size: 30px;
+    grid-column: span 2;
+    color: white;
+}
+
+#linkedIn {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 14px 28px;
+    border-radius: 30px;
+    color: rgb(52, 52, 186);
+}
+
+#ProgrammerImg {
+    
+    height: 100%;      
+    grid-row: span 3;
+        
+}
+

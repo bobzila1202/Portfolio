@@ -1,0 +1,23 @@
+body {
+   background: linear-gradient(#11186a ,black 50% 60%, #11186a );
+   /* background-repeat: no-repeat; */
+   margin: 0;
+   padding: 0;
+   font-family: 'Trebuchet MS';
+   
+}
+
+body::-webkit-scrollbar{
+   display:none;
+}
+
+
+html {
+   margin: 0;
+   padding: 0;
+}
+
+#root {
+   height:auto;
+}
+
