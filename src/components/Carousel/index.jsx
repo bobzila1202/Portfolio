@@ -6,21 +6,21 @@ import { Image } from 'react-bootstrap';
 import './Carousel.css'
 
 
-const CarouselComponent = ({projects}) => {
-
-    return(
-    <Carousel id='carousel'>
-                {projects.map((projects, index) =>(
+const CarouselComponent = ({ projects }) => {
+    return (
+        <Carousel id="carousel">
+            {projects.map((project, index) => (
                 <CarouselItem key={index}>
-                <Image src={projects.image} alt={projects.name} />
-                <CarouselCaption>
-                    <h3>{projects.name}</h3>
-                    <p>{projects.description}</p>
-                </CarouselCaption>
+                    <Image src={project.image} alt={project.name} />
+                    <CarouselCaption>
+                        <h3 style={{ color: project.textColor, fontWeight: 'bold' }}>{project.name}</h3> 
+                        <p style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold' }}>{project.description}</p>
+                    </CarouselCaption>
                 </CarouselItem>
-                ))}
-    </Carousel>
-)}
+            ))}
+        </Carousel>
+    );
+};
 
 export default CarouselComponent
 

@@ -17,7 +17,7 @@ const PopUp = ({SetOpenPopUp}) => {
                     <FontAwesomeIcon icon="fa-solid fa-phone" style={{color: "#ffffff",}} />
                     <p>07495644660</p>
                     <FontAwesomeIcon icon="fa-solid fa-location-dot" style={{color: "#ffffff",}} />
-                    <p>United Kingdom, London</p>
+                    <p>London, United Kingodm</p>
                 </div>
                 <div className="footer">
                     <button onClick={() => {SetOpenPopUp(false)}}>Close</button>

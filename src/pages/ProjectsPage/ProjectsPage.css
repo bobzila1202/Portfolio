@@ -1,13 +1,59 @@
+/* Carousel container */
 .projects .container {
+    width: 100%; /* Make the container fluid */
+    max-width: 1200px; /* Set a maximum width for larger screens */
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 50px;
+    padding: 2rem 1rem; /* Padding around the carousel */
 }
 
 .projects {
-
     margin: auto;
-    padding: 8rem 0rem 0 0rem;
-    width: 100%;
+    padding: 8rem 0 0;
+    max-width: 100%; /* Ensure full width */
+}
+
+/* Carousel items (e.g., images) */
+.carousel-item img {
+    width: 100%; /* Make images take up the full width of the container */
+    height: auto; /* Keep the aspect ratio of images */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .projects .container {
+        max-width: 90%; /* Slightly reduce the container size */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Keep images fluid */
+    }
+}
+
+/* Phones and Small Screens */
+@media (max-width: 768px) {
+    .projects .container {
+        max-width: 100%; /* Full width on smaller devices */
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto; /* Ensure images don't overflow the container */
+    }
+}
+
+/* Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .projects .container {
+        padding: 0.5rem; /* Further reduce padding */
+        max-width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%; /* Make sure images scale to fit the screen */
+        height: auto;
+    }
 }

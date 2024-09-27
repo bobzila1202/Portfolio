@@ -68,6 +68,47 @@
     flex: 1;    
 }   
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    
+    .navlink, .contactlink {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    #navcenter {
+        flex-direction: column;
+    }
+}
+
+/* Media query for very small screens like mobile phones */
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 16px;  /* Reduce font size for mobile */
+        display: block;
+        text-align: center;
+    }
+
+    .navlink, .contactlink {
+        width: 100%;  /* Make nav links full width */
+        height: auto;
+        display: block;
+    }
+
+    .header {
+        height: auto;  /* Reduce header size for mobile */
+    }
+}
+
 
 
 

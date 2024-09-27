@@ -1,34 +1,38 @@
+/* Home Section Grid Layout */
 .home .container {
     display: grid;
-    width: auto;
+    width: 100%; /* Ensure it takes full width */
     margin: auto;
-    grid-template-rows: 60px 120px 190px;
-    grid-template-columns: 190px 450px 500px;
+    grid-template-columns: 1fr 2fr 2fr; /* Fluid columns */
+    grid-template-rows: auto; /* Make rows adapt based on content */
     position: relative;
-    /* margin-left: 180px; */
     margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    gap: 20px; /* Add gap between items for spacing */
 }
 
+/* Home Section Overall */
 .home {
     margin: auto;
-    padding: 8rem 0rem 0px 0rem;
-    max-width: auto;
+    padding: 8rem 0 0;
+    max-width: 100%; /* Ensure full width */
 }
 
+/* Header and Paragraph Styling */
 h1 {  
-    grid-column: span 2;
+    grid-column: span 2; /* Spans 2 columns */
+    font-size: 2rem; /* Responsive font size */
 }
 
-p{
-    font-size: 30px;
+p {
+    font-size: 1.5rem; /* Adjusted for smaller screens */
     grid-column: span 2;
     color: white;
+    line-height: 1.5;
 }
 
+/* LinkedIn Button */
 #linkedIn {
     width: 120px;
     height: 50px;
@@ -38,12 +42,66 @@ p{
     padding: 14px 28px;
     border-radius: 30px;
     color: rgb(52, 52, 186);
+    font-size: 1rem; /* Make it responsive */
+    cursor: pointer;
 }
 
+/* Image Styling */
 #ProgrammerImg {
-    
-    height: 100%;      
+    width: 100%;
+    height: auto;
     grid-row: span 3;
-        
+    max-width: 500px; /* Cap max width for large screens */
+    margin: auto;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home .container {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        grid-template-rows: auto; /* Allow rows to expand as needed */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust font size */
+        grid-column: 1; /* Only spans 1 column on smaller screens */
+    }
+
+    p {
+        font-size: 1.2rem; /* Smaller font size */
+        grid-column: 1; /* Stacks with single column */
+    }
+
+    #linkedIn {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 0.9rem; /* Adjust button size for mobile */
+    }
+
+    #ProgrammerImg {
+        width: 100%; /* Full width for the image */
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #linkedIn {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 0.9rem; /* Adjust button size for mobile */
+    }
+
+    #ProgrammerImg {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,43 +1,105 @@
+/* Skills Section Grid Layout */
 .skills .container {
     margin: auto;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Keep multiple rows */
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
     text-align: center;
-    grid-row-gap: 10%;
-    grid-column-gap: 1%;
-    padding-top: 30px;
-    
+    grid-row-gap: 10%; /* Vertical gap between rows */
+    grid-column-gap: 1%; /* Horizontal gap between columns */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
+/* Individual Skill Items */
 .skills .container div {
     box-shadow: 0px 5px 5px black;
 }
 
+/* Heading Styling */
 .skills h1 {
     text-align: center;
     color: white;
 }
 
+/* Paragraph Styling */
 .skills p {
     color: white;
     font-size: 20px;
     text-align: center;
 }
 
-.skills .container p{
+/* Specific Container Paragraph Styling */
+.skills .container p {
     color: white;
     font-size: 20px;
     text-align: center;
 }
 
+/* Skills Section Wrapper */
 .skills {
     margin: auto;
-    padding: 11.4rem 0rem 0 0rem;
+    padding: 11.4rem 0 0;
     width: 100%;
-}   
+}
 
+/* Skill Items Size */
 .item {
-   width: 100px;
-   height: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .skills .container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+        grid-row-gap: 5%; /* Reduce row gap for smaller screens */
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .item {
+        width: 80px; /* Reduce size of skill items */
+        height: 80px;
+    }
+
+    .skills p {
+        font-size: 18px; /* Adjust font size for readability */
+    }
+}
+
+/* Phones and Small Screens */
+@media (max-width: 768px) {
+    .skills .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller devices */
+        grid-row-gap: 5%; /* Adjust row gap */
+    }
+
+    .item {
+        width: 70px; /* Smaller skill item size */
+        height: 70px;
+    }
+
+    .skills p {
+        font-size: 16px; /* Further reduce font size */
+    }
+}
+
+/* Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .skills .container {
+        grid-template-columns: 1fr; /* Stack items in 1 column */
+        grid-row-gap: 10%; /* Keep row spacing */
+    }
+
+    .item {
+        width: 60px; /* Further reduce item size */
+        height: 60px;
+    }
+
+    .skills p {
+        font-size: 14px; /* Small font size for mobile screens */
+    }
 }
