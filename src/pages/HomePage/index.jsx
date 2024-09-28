@@ -1,6 +1,6 @@
 import React from "react";
 import './HomePage.css';
-import pdf from '../../assets/Balram_Singh_CV_3.pdf'
+import pdf from '../../assets/Balram_Singh_CV.pdf'
 import programmerimg from '../../assets/CartoonProgrammer.png'
 
 const HomePage = () => {
