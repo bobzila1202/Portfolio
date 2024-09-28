@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,7 +26,11 @@
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "gh-pages": "^6.1.1",
-    "vite": "^4.4.11"
+    "vite": "^4.5.5"
   }
+  , 
+    "homepage": "https://bobzila1202.github.io/"
+  
 }
