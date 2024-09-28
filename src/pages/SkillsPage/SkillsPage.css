@@ -89,17 +89,13 @@
 
 /* Very Small Screens (Mobile) */
 @media (max-width: 480px) {
-    .skills .container {
-        grid-template-columns: 1fr; /* Stack items in 1 column */
-        grid-row-gap: 10%; /* Keep row spacing */
-    }
-
+  
     .item {
         width: 60px; /* Further reduce item size */
         height: 60px;
     }
 
     .skills p {
-        font-size: 14px; /* Small font size for mobile screens */
+        font-size: 20px; /* Small font size for mobile screens */
     }
 }
