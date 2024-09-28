@@ -1,5 +1,6 @@
 import React from "react";
 import './AboutPage.css'
+import myPicture from '../../assets/IMG-20231021-WA0002.jpg'
 
 const AboutPage = () => {
     return(
@@ -7,7 +8,7 @@ const AboutPage = () => {
             <div className="container">
                 <h1 >About Me</h1>
                 <p className="aboutMe">A highly motivated software engineer with experience deploying projects and working on teams looking for a new challenge. Constantly working on projects and eager to develop my skills to a higher degree. Outside of my tech life I am a huge advocate for physical fitness and have niche hobbies such as powerlifting and playing pc games.</p>
-                <img id="myPic" src="src\assets\IMG-20231021-WA0002.jpg" alt="A picture of me" />
+                <img id="myPic" src={myPicture} alt="A picture of me" />
             </div>
         </div>
         

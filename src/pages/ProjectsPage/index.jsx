@@ -1,23 +1,26 @@
 import React from "react";
 import './ProjectsPage.css'
 import CarouselComponent from "../../components/Carousel";
+import image1 from '../../assets/projectimage.png'
+import image2 from '../../assets/projectimage2.png'
+import image3 from '../../assets/projectimage3.png'
 
 let projects = [
     {
         name: 'SZND Chef',
-        image: 'src/assets/projectimage.png',
+        image: image1,
         description: 'Dynamic full-stack seasonal recipe website',
         textColor: 'black' // Specify text color for this project
     },
     {
         name: 'TrashToTreasure',
-        image: 'src/assets/projectimage2.png',
+        image: image2,
         description: 'Community recycle hub',
         textColor: 'black' // Specify text color for this project
     },
     {
         name: 'Refactory',
-        image: 'src/assets/projectimage3.png',
+        image: image3,
         description: 'Interactive coding learning game',
         textColor: 'white' // Specify text color for this project
     }
