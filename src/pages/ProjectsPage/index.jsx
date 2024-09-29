@@ -10,18 +10,22 @@ let projects = [
         name: 'SZND Chef',
         image: image1,
         description: 'Dynamic full-stack seasonal recipe website',
+        linkFront: "https://github.com/SmithNJ13/yao42_frontend/tree/staging",
+        linkBack: "https://github.com/ollie-byrne99/Lap_4_Server",
         textColor: 'black' // Specify text color for this project
     },
     {
         name: 'TrashToTreasure',
         image: image2,
         description: 'Community recycle hub',
+        link: "https://github.com/fillygee/FCC---Trash-to-Treasure",
         textColor: 'black' // Specify text color for this project
     },
     {
         name: 'Refactory',
         image: image3,
         description: 'Interactive coding learning game',
+        linkBack: "https://github.com/bobzila1202/backend/",
         textColor: 'white' // Specify text color for this project
     }
 ];

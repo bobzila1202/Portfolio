@@ -16,7 +16,7 @@ const SkillsPage = () => {
     return (
         <div className="skills" id="skills">
             <h1>My Skills</h1>
-            <p>Familiar with producing code for both front-end and back-end while testing with frameworks such as Jest, Vitest and Pytest </p>
+            <p>Familiar with producing code for both front-end and back-end while testing with frameworks such as Jest and Pytest </p>
             <div className="container">
                 <div> <img className="item" src={cssIcon} alt="CSS" /> <p>CSS</p> </div>
                 <div> <img className="item" src={htmlIcon} alt="HTML" /> <p>HTML</p> </div>

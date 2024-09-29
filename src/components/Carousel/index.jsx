@@ -14,7 +14,10 @@ const CarouselComponent = ({ projects }) => {
                     <Image src={project.image} alt={project.name} />
                     <CarouselCaption>
                         <h3 style={{ color: project.textColor, fontWeight: 'bold' }}>{project.name}</h3> 
-                        <p style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold' }}>{project.description}</p>
+                        <p style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold', marginBottom: '20px' }}>{project.description}</p>
+                        {project.link && (<a href={project.link} target='_blank' style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold' }}>Repo</a>)}
+                        {project.linkFront && (<a href={project.linkFront} target='_blank' style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold', marginRight: '100px' }}>Front End</a>)}
+                        {project.linkBack && (<a href={project.linkBack} target='_blank' style={{ color: project.textColor, fontSize: '20px', fontWeight: 'bold' }}>Back End</a>)}
                     </CarouselCaption>
                 </CarouselItem>
             ))}

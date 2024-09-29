@@ -16,6 +16,7 @@
     color: white;
     width: 70%;
     border: solid 1px;
+    border-radius: 30px;
     padding: 1%;
     float: left;
 }
